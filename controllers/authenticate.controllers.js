@@ -132,6 +132,7 @@ export const logout = asyncHandler(async (req, res) => {
 export const getProfile = asyncHandler(async (req, res, next) => {
   const user = req.user;
 
+  // console.log(user, "---user---");
   res.status(200).json({
     success: true,
     responseData: user,
