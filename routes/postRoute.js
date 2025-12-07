@@ -17,7 +17,7 @@ postRoute.use(isAuthenticated);
 postRoute.post("/createPost", createPost);
 postRoute.get("/get-all-posts", getAllPost);
 postRoute.get("/:userId/posts", getSearchUserPost);
-postRoute.put("/editUserProfile", updateUserProfile); // ? patch
+postRoute.patch("/editUserProfile", updateUserProfile);
 postRoute.get("/getFollowUserPost", getAllFollowerPost);
 postRoute.get("/getAllUsersPosts", getAllUsersPost);
 postRoute.get("/reels", getAllUsersPosts);
